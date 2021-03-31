@@ -17,7 +17,7 @@ spec:
         app: events-external
     spec:
       containers:
-      - image: gcr.io/swift-arcadia-272518/events-external:v1.0.0
+      - image: gcr.io/positive-tempo-309316/events-external:v1.0.0
         name: events-external
         ports:
         - containerPort: 8080
