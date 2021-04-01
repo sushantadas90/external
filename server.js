@@ -12,7 +12,7 @@ const express = require('express');
 // https://www.npmjs.com/package/body-parser
 const bodyParser = require('body-parser');
 
-// express-handlebars is a templating library 
+// express-handlebars is a templating library
 // https://www.npmjs.com/package/express-handlebars
 // - look inside the views folder for the templates
 // data is inserted into a template inside {{ }}
