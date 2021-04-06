@@ -4,9 +4,21 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "SERVER=http://localhost:8082 node server.js",
-    "test": "SERVER=http://localhost:8082 nyc mocha --exit"
-  },
+      "start": "SERVER=http://localhost:8082 node server.js",
+      "test":  "jest --coverage"
+    },
+    "jest": {
+        "testEnvironment":  "node",
+        "coveragePathIgnorePatterns": [
+            "/node_modules/"
+        ],
+        "testResultsProcessor":  "jest-sonar-reporter"
+    },
+    "jestSonar": {
+        "reportPath":  "coverage",
+        "reportFile":  "test-reporter.xml",
+        "indent":  4
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
